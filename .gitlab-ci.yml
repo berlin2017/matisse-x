@@ -1,14 +1,16 @@
 build_try:
   stage: build
   script:
-    - ./gradlew :magicasakura-x:build
+    - chmod +x ./gradlew
+    - ./gradlew :matisse_x:build
   except:
     - tags
 
 build_push:
   stage: deploy
   script:
-    - ./gradlew :magicasakura-x:build
-    - ./gradlew :magicasakura-x:Artifactorypublish
+      - chmod +x ./gradlew
+    - ./gradlew :matisse_x:build
+    - ./gradlew :matisse_x:Artifactorypublish
   only:
     - tags
