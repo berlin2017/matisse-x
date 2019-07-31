@@ -20,12 +20,12 @@ apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion COMPILE_SDK_VERSION
     buildToolsVersion '28.0.3'
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 28
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -45,7 +45,7 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "androidx.annotation:annotation:1.1.0"
     implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
-    implementation 'it.sephiroth.android.library.imagezoom:library:1.0.4'
+    implementation "it.sephiroth.android.library.imagezoom:library:$imagezoom_version"
 
     //图片显示 matisse需要glide或者picasso
     implementation "com.github.bumptech.glide:glide:$glide_version"
