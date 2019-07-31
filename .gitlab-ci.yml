@@ -9,7 +9,7 @@ build_try:
 build_push:
   stage: deploy
   script:
-      - chmod +x ./gradlew
+    - chmod +x ./gradlew
     - ./gradlew :matisse_x:build
     - ./gradlew :matisse_x:Artifactorypublish
   only:
