@@ -54,7 +54,7 @@ dependencies {
 
 def libraryGroupId = 'cn.lonsun.android'
 def libraryArtifactId = 'matisse_x'
-def libraryVersion = '1.0.0'
+def libraryVersion = '1.0.1'
 
 
 publishing {
